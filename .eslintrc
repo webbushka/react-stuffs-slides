@@ -1,0 +1,34 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": [2, "tab"],
+        "quotes": [2, "single"],
+        "linebreak-style": [2, "unix"],
+        "semi": [2, "always"],
+        "strict": 0,
+        "no-underscore-dangle": 0,
+        "no-shadow": 0,
+        "comma-dangle": 0, // NOTE: IE8 and below will throw an error when it encounters trailing commas in JavaScript
+        "no-unused-vars": [2, { "vars": "all", "args": "none" }],
+        "no-alert": 0
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "globals": {
+        "window": true,
+        "$": true,
+        "fabric": true,
+        "env": true
+    }
+}
